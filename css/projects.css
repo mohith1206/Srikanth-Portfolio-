@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
@@ -56,6 +57,20 @@ main {
 #projects h2 {
   font-size: 3em;
   margin-bottom: 1em;
+  position: relative;
+  overflow: hidden;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .project-cards {
@@ -66,20 +81,61 @@ main {
 }
 
 .project-card {
-  background: #eaeaea;
+  background: #fff;
   border-radius: 10px;
   padding: 20px;
   max-width: 30%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.project-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.project-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.project-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h3 {
   font-size: 1.5em;
   margin-bottom: 0.5em;
+  transition: color 0.3s ease;
 }
 
 .project-card p {
   font-size: 1em;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover h3,
+.project-card:hover p {
+  color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .project-card {
+    max-width: 45%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -90,5 +146,31 @@ main {
 
   .project-card {
     max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+  }
+
+  nav ul li a {
+    font-size: 0.9em;
+  }
+
+  #projects h2 {
+    font-size: 2em;
+  }
+
+  .project-card h3 {
+    font-size: 1.2em;
+  }
+
+  .project-card p {
+    font-size: 0.9em;
   }
 }
