@@ -70,6 +70,7 @@ main {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .experience-item h3 {
@@ -85,6 +86,25 @@ main {
 .experience-item:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+  display: none;
+  margin-top: 1em;
+}
+
+.details h4 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.details ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+.details ul li {
+  margin-bottom: 0.5em;
 }
 
 /* Media Queries */
@@ -117,6 +137,14 @@ main {
   }
 
   .experience-item p {
+    font-size: 0.9em;
+  }
+
+  .details h4 {
+    font-size: 1em;
+  }
+
+  .details ul li {
     font-size: 0.9em;
   }
 }

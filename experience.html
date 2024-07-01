@@ -24,28 +24,81 @@
   <section id="experience">
     <h2>Professional Experience</h2>
     <div class="experience-grid">
-      <div class="experience-item">
+      <div class="experience-item" onclick="toggleDetails('hp-details')">
         <h3>HP, Vancouver, WA</h3>
         <p><strong>Role:</strong> Full Stack Java Developer</p>
         <p><strong>Duration:</strong> August 2022 - Till Date</p>
+        <div id="hp-details" class="details">
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Engaged in DevOps/Agile operations collaborating with Scrum and Kanban teams.</li>
+            <li>Led the migration of a diverse portfolio of SOAP/RESTful API Web Services and Applications from on-premises to Azure public cloud.</li>
+            <li>Developed Terraform scripts in collaboration with the Infra team.</li>
+            <li>Orchestrated the provisioning of servers for MySQL, Postgres, and Cosmos Databases on the public cloud.</li>
+            <li>Crafted and modified Docker files for container management.</li>
+            <li>Configured and implemented Jenkins CICD workflows and pipelines.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <p>Java, HTML5, CSS3, Node JS, My SQL, PL/SQL, Mongo DB, Jenkins, MongoDB, Cassandra DB, RESTful, Spring Boot, Spring modules, Azure, Azure Virtual Machines, Azure tools, MS Azure Storage, Azure Backup, Azure Site Recovery, Junit, Mockito, Jasmine, Karma, Docker, Kubernetes, GIT, Maven.</p>
+        </div>
       </div>
-      <div class="experience-item">
+      <div class="experience-item" onclick="toggleDetails('volvo-details')">
         <h3>Volvo Cars, New Jersey</h3>
         <p><strong>Role:</strong> Full Stack Java Developer</p>
         <p><strong>Duration:</strong> November 2020 - July 2022</p>
+        <div id="volvo-details" class="details">
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Engaged in various phases of the Software Development Life Cycle (SDLC).</li>
+            <li>Designed and implemented efficient UI screens using HTML5, CSS3, Angular 2.x/4.x, and Bootstrap framework.</li>
+            <li>Utilized Angular CLI and Typescript in Angular 2.x/4.x to develop controllers and components.</li>
+            <li>Leveraged MongoDB internal tools such as Mongo Compass and Mongo Atlas Manager.</li>
+            <li>Extensively utilized Spring REST and Spring Boot to develop RESTful API services integrating with MySQL database.</li>
+            <li>Deployed applications on Amazon Web Services (AWS) utilizing AWS EC2 instances and Amazon Aurora RDS.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <p>Java 1.8, HTML5, CSS3, Angular 2.x/4.x, Typescript, Node JS, Bootstrap, My SQL, PL/SQL, Mongo DB, Jenkins, Log4j, RESTful, Spring Boot, Elastic search, EC2, Spring modules, AWS, Junit, Mockito, Jasmine, Karma, Docker, Kubernetes, GIT, Maven.</p>
+        </div>
       </div>
-      <div class="experience-item">
+      <div class="experience-item" onclick="toggleDetails('hcl-details')">
         <h3>HCL Tech, Jackson, MI</h3>
         <p><strong>Role:</strong> Full Stack Java Developer</p>
         <p><strong>Duration:</strong> May 2018 - October 2022</p>
+        <div id="hcl-details" class="details">
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Implemented AGILE methodology and actively participated in SCRUM meetings.</li>
+            <li>Designed and developed the user interface using HTML, CSS, JavaScript, AngularJS, Typescript 1.8, and Angular 2.x.</li>
+            <li>Established reusable components and services in Typescript to interact with REST APIs.</li>
+            <li>Implemented JWT for secure authentication of RESTful services.</li>
+            <li>Developed a microservice application using Spring Boot for RESTful services.</li>
+            <li>Integrated automation batch run job with Jenkins for continuous integration and deployment.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <p>Java 1.8, HTML5, CSS3-LESS, JavaScript, Angular 2.x, AJAX, Spring Security, Rabbit MQ, Spring Data, Spring Batch, Bootstrap, jQuery, Quartz Scheduler, Hibernate, Spring Boot, Micro Services, Restful services, Eclipse IDE, Jenkins, Spring Cloud, Splunk, MySQL, Docker, Apache tomcat, Jenkins, JUnit, Selenium, Cassandra DB, JIRA, MongoDB, Cassandra Node Connector, JBoss, WADL.</p>
+        </div>
       </div>
-      <div class="experience-item">
+      <div class="experience-item" onclick="toggleDetails('capgemini-details')">
         <h3>Capgemini, India</h3>
         <p><strong>Role:</strong> Java/J2EE Developer</p>
         <p><strong>Duration:</strong> May 2016 - April 2018</p>
+        <div id="capgemini-details" class="details">
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Contributed across various phases of the Software Development Life Cycle (SDLC).</li>
+            <li>Utilized HTML, CSS, jQuery, Bootstrap, and AJAX to develop dynamic web pages for applications.</li>
+            <li>Developed responsive UI modules using Backbone JS with hard-coded dependencies on Underscore JS and Handlebar JS.</li>
+            <li>Managed PostgreSQL databases for storing application data.</li>
+            <li>Implemented the Object-Relational Mapping (ORM) framework using Hibernate.</li>
+            <li>Built applications on the Spring framework leveraging features like Dependency Injection, Spring Beans, Spring Security, Spring JPA, and Spring AOP.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <p>Spring AOP, Spring IOC, Spring Dependency injection, Spring Beans, Spring Security, Spring JPA, Spring Web flow, Spring Transactions, Spring Batch, SOAP, MongoDB, Cassandra DB, HTML, jQuery, JavaScript, CSS, JSP, log4j, JMS, Rabbit MQ, WSDL, Maven, JUnit, Selenium.</p>
+        </div>
       </div>
     </div>
   </section>
 </main>
+<script src="js/script.js"></script>
 </body>
 </html>
